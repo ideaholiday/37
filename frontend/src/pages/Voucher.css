@@ -1,0 +1,241 @@
+.voucher-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.success-message {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
+  border-radius: 16px;
+}
+
+.success-icon {
+  color: var(--success-color);
+  margin-bottom: 20px;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.success-message h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.success-message p {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.booking-id {
+  font-size: 16px !important;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: white;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.booking-id strong {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.voucher-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.voucher-content {
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.voucher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.company-info h2 {
+  font-size: 28px;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.company-info p {
+  color: var(--text-secondary);
+}
+
+.voucher-type {
+  color: var(--primary-color);
+}
+
+.voucher-divider {
+  border-top: 2px dashed var(--border-color);
+  margin: 30px 0;
+}
+
+.voucher-section {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.voucher-section:last-of-type {
+  border-bottom: none;
+}
+
+.voucher-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.detail-item .label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-item .value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.additional-info {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+.additional-info p {
+  color: var(--text-primary);
+  margin: 8px 0;
+}
+
+.payment-summary {
+  background: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 15px;
+}
+
+.payment-row:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.payment-row .amount {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--success-color);
+}
+
+.voucher-footer {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px dashed var(--border-color);
+}
+
+.important-note {
+  padding: 16px;
+  background: rgba(251, 146, 60, 0.1);
+  border-left: 4px solid var(--warning-color);
+  border-radius: 4px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.thank-you {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.return-home {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Print Styles */
+@media print {
+  .voucher-actions,
+  .return-home,
+  header,
+  footer {
+    display: none !important;
+  }
+
+  .voucher-content {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .voucher-content {
+    padding: 24px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .voucher-actions {
+    flex-direction: column;
+  }
+
+  .voucher-actions .btn {
+    width: 100%;
+  }
+
+  .success-message h1 {
+    font-size: 28px;
+  }
+}
