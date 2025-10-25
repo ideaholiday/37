@@ -1,0 +1,177 @@
+.hotel-review {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hotel-review h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--text-primary);
+}
+
+.review-container {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 30px;
+}
+
+.review-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.review-section {
+  padding: 0;
+  overflow: hidden;
+}
+
+.hotel-preview {
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.rating-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.hotel-details-section {
+  padding: 32px;
+}
+
+.hotel-details-section h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.amenities-list h3,
+.policies h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.amenity-item {
+  padding: 12px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  color: var(--text-primary);
+}
+
+.policies {
+  background: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.policies p {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+}
+
+.policies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.policies li {
+  padding: 6px 0;
+  padding-left: 24px;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.policies li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success-color);
+  font-weight: 700;
+}
+
+.price-sidebar {
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+  padding: 24px;
+}
+
+.price-sidebar h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+.price-details {
+  margin-bottom: 24px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 15px;
+}
+
+.price-divider {
+  border-top: 2px solid var(--border-color);
+  margin: 16px 0;
+}
+
+.price-row.total {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.price-row.total span:last-child {
+  color: var(--primary-color);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .review-container {
+    grid-template-columns: 1fr;
+  }
+
+  .price-sidebar {
+    position: static;
+  }
+}
