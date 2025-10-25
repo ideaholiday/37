@@ -1,0 +1,49 @@
+.rt-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:0 1px 2px rgba(0,0,0,0.04);overflow:hidden}
+@media(min-width:768px){.rt-card{flex-direction:row}}
+.rt-pane{flex:1;padding:16px}
+.rt-pane--bordered{border-top:1px solid #e5e7eb}
+@media(min-width:768px){.rt-pane--bordered{border-top:none;border-left:1px solid #e5e7eb}}
+.rt-title{font-size:12px;font-weight:600;color:#6b7280;margin-bottom:8px}
+.rt-airline{display:flex;align-items:center;gap:8px}
+.rt-logo{height:24px;width:24px;border-radius:4px;object-fit:cover}
+.rt-logo--placeholder{background:#f3f4f6}
+.rt-airline-name{font-size:14px;color:#111827}
+.rt-grid{margin-top:12px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px}
+.rt-time{font-size:18px;font-weight:600;color:#111827}
+.rt-airport{font-size:12px;color:#6b7280}
+.rt-mid{text-align:center}
+.rt-duration{font-size:14px;color:#4b5563}
+.rt-line{height:1px;width:64px;background:#d1d5db;margin:4px auto}
+.rt-stops{font-size:12px;color:#6b7280}
+.rt-right{text-align:right}
+.rt-price{width:100%;border-top:1px solid #e5e7eb;background:#f9fafb;display:flex;align-items:center;justify-content:center;padding:16px}
+@media(min-width:768px){.rt-price{width:192px;border-top:none;border-left:1px solid #e5e7eb}}
+.rt-price-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#6b7280;text-align:center}
+.rt-price-value{font-size:22px;font-weight:700;color:#111827;text-align:center}
+.rt-cta{width:100%;border-top:1px solid #e5e7eb;padding:16px}
+.rt-btn{width:100%;background:#2563eb;color:#fff;border:none;border-radius:8px;padding:10px 14px;font-weight:600;cursor:pointer}
+.rt-btn:hover{background:#1d4ed8}
+.rt-btn--disabled{opacity:.6;cursor:not-allowed}
+
+/* Modal styles */
+.rt-modal-root{position:fixed;inset:0;z-index:50;display:flex;align-items:flex-end;justify-content:center}
+@media(min-width:640px){.rt-modal-root{align-items:center}}
+.rt-modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,0.4)}
+.rt-modal{position:relative;background:#fff;width:100%;max-width:768px;max-height:85vh;border-radius:16px 16px 0 0;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+@media(min-width:640px){.rt-modal{border-radius:16px}}
+.rt-modal-header{padding:16px;border-bottom:1px solid #e5e7eb;background:#f9fafb}
+.rt-modal-title{font-size:18px;font-weight:700}
+.rt-modal-close{background:none;border:none;color:#6b7280;float:right;cursor:pointer}
+.rt-modal-sub{margin-top:8px;display:flex;align-items:center;justify-content:space-between}
+.rt-subline{font-size:14px}
+.rt-bold{font-weight:600;color:#111827}
+.rt-dim{color:#6b7280}
+.rt-xs{font-size:12px}
+.rt-sm{font-size:14px}
+.rt-modal-body{padding:8px 8px;max-height:55vh;overflow:auto}
+.rt-option{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;padding:12px 8px;border-radius:8px;border:1px solid transparent;background:#fff}
+.rt-option:hover{background:#f9fafb;border-color:#e5e7eb}
+.rt-option-right{font-weight:600}
+.rt-modal-footer{padding:16px;border-top:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;background:#fff}
+.rt-footer-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#6b7280}
+.rt-footer-total{font-size:18px;font-weight:700}

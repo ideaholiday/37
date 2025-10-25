@@ -6,6 +6,7 @@ import FlightSearch from './pages/FlightSearch'
 import FlightResults from './pages/FlightResults'
 import FlightReview from './pages/FlightReview'
 import FlightBooking from './pages/FlightBooking'
+import RoundTripResults from './pages/RoundTripResults'
 import HotelSearch from './pages/HotelSearch'
 import HotelResults from './pages/HotelResults'
 import HotelReview from './pages/HotelReview'
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/flights" element={<FlightSearch />} />
             <Route path="/flights/results" element={<FlightResults />} />
+            <Route path="/flights/round-trip/results" element={<RoundTripResults />} />
             <Route path="/flights/review" element={<FlightReview />} />
             <Route path="/flights/booking" element={<FlightBooking />} />
             <Route path="/hotels" element={<HotelSearch />} />
