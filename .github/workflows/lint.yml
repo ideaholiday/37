@@ -6,6 +6,10 @@ on:
       - vercel.deployment.created
       - vercel.deployment.ready
 
+permissions:
+  contents: read
+  statuses: write
+
 jobs:
   lint:
     runs-on: ubuntu-latest
