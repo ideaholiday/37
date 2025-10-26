@@ -2,7 +2,9 @@ name: Lint
 
 on:
   repository_dispatch:
-    types: [vercel.deployment.*]
+    types:
+      - vercel.deployment.created
+      - vercel.deployment.ready
 
 jobs:
   lint:
